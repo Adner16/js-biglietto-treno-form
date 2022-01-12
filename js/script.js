@@ -19,13 +19,13 @@ btnCalc.addEventListener('click', function(){
 console.log(`costo biglietto:${ticketPrice}`);
 
 
-if (ageValue = 'minorenne') {
+if (ageValue == 'minorenne') {
     const discountYoung = (ticketPrice * 0.20).toFixed(2);
     console.log(`sconto young: ${discountYoung}`);
     finalPrice = (ticketPrice - discountYoung).toFixed(2);
     console.log(`prezzo scontato young: ${finalPrice}`);
 }
-else if (ageValue = 'over65') {
+else if (ageValue == 'over65') {
     const discountSenior = (ticketPrice * 0.40).toFixed(2);
     console.log (`sconto senior: ${discountSenior}`);
     finalPrice = (ticketPrice - discountSenior).toFixed(2);
