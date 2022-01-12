@@ -36,11 +36,22 @@ else {
     console.log (`prezzo senza sconto: ${finalPrice}`);
 }
 
+const displayOfferta = document.getElementById('offerta');
+displayOfferta.innerText = ageValue;
+
+const displayCarrozza = document.getElementById('carrozza');
+const coachNumber = Math.floor( Math.random() * 100 +1);
+displayCarrozza.innerText = coachNumber;
+
+const displayCp = document.getElementById('posto');
+const cpNumber = Math.floor( Math.random() * 100 +1);
+displayCp.innerText = cpNumber;
+
 const prezzo = document.getElementById('prezzo');
-prezzo.innerHTML = finalPrice;   
+prezzo.innerText = finalPrice;   
 
 const displayName = document.getElementById('display-user-name');
-displayName.innerHTML = nameValue;
+displayName.innerText = nameValue;
 });
 
 
