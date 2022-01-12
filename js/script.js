@@ -2,10 +2,11 @@ console.log('js ok');
 
 let finalPrice;
 
-const userKm = parseInt(prompt('Per quanti km vuoi viaggiare?'));
+const userName = document.getElementById('user-name');
+const userKm = parseInt(document.getElementById('user-km'));
 console.log(`km di viaggio: ${userKm} `);
 
-const userAge = parseInt(prompt('Quanti anni hai?'));
+const userAge = 
 console.log(`età del cliente:${userAge}`);
 
 const ticketPrice = userKm * 0.21;
@@ -29,6 +30,7 @@ else {
 }
 
 const prezzo = document.getElementById('prezzo');
-
-
 prezzo.innerHTML = finalPrice.toFixed(2);   
+
+const DisplayName = document.getElementById('display-user-name');
+
