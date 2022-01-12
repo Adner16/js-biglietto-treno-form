@@ -14,9 +14,8 @@ btnCalc.addEventListener('click', function(){
     console.log(nameValue);
     const ageValue = userAge.value;
     console.log(ageValue);
-});
 
-const ticketPrice = userKm * 0.21;
+    const ticketPrice = userKm * 0.21;
 console.log(`costo biglietto:${ticketPrice}`);
 
 
@@ -40,5 +39,9 @@ else {
 const prezzo = document.getElementById('prezzo');
 prezzo.innerHTML = finalPrice;   
 
-const DisplayName = document.getElementById('display-user-name');
+const displayName = document.getElementById('display-user-name');
+displayName = nameValue;
+
+});
+
 
